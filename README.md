@@ -8,7 +8,7 @@
 2) customers
 3) loans 
 
-* every section had some function, so lets go. 
+* every section had some functions, so lets go. 
 
 # books fucntion : 
 
