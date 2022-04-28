@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: #336699; }
+    body  {
+    background-image: url('/static/Photos/library.jpg');}
+    .center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #218cad;
+  padding: 10px;
+  background-color: wheat;
+  text-align: center;
+  
+    }
+  </style>
+{% endblock %}
+{% block content %}
+<br>
+
+<div class="center"> 
+
+  Welcome to my library management program
+
+</div>
+
+
+
+{% endblock %}
+

@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: #336699; }
+  </style>
+{% endblock %}
+{% block content %}
+<br>
+<form method="POST">
+  <div><label>Name: <input type="text" name="Name" required></label></div>
+  <br>
+  <div><label>Author: <input type="text" name="Author" required></label></div>
+  <br>
+  <div><label>Year Published: </label><input type="number" name="Year Published" min="0" required></label></div>
+  <br>
+  <div><label >Type: <select name="Type" id="Type" required><option disabled selected value> -- select book type -- </option>
+      <option value="1">1- up to 10 days</option>
+      <option value="2">2- up to 5 days</option>
+      <option value="3">3- up to 2 days</option>
+    </select>
+    <br><br>
+    <div><label >Status: <select name="Status" id="Status" required><option disabled selected value> -- select book status -- </option>
+      <option value="avail">avail</option>
+      <option value="issued">issued</option>
+    </select>
+    <br><br>
+     <button type="submit">Add book</button>
+     <button type="reset">Reset</button>
+   
+   
+  </form>
+  
+    <div style="text-align: center; font-size: medium;" > {{msg}} </div>
+
+ <!-- <button onclick="myFunction()">Add Book</button>
+  <script>
+
+    function myFunction() {
+      alert("Book has been added!");
+    }
+    </script> -->
+{% endblock %}
+

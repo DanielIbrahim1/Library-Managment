@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: #336699; }
+  </style>
+{% endblock %}
+{% block content %}
+<br>
+<form method="POST">
+    <div><label>Name: <input type="text" name="Name" required></label></div>
+    <br>
+    <div><label>City: <input type="text" name="City" required></label></div>
+    <br>
+    <div><label>Age: <input type="number" name="Age" min="1" max="200" required></label></div>
+    <br>
+    <button type="submit">Add Customer</button>
+    <button type="reset">Reset</button>
+   
+  </form>
+  
+    <div style="text-align: center; font-size: medium;" > {{msg}} </div>
+
+
+
+
+ <!-- <button onclick="myFunction()" >Add Customer</button>
+  <script>
+    function myFunction() {
+      alert("Customer has been added!");
+    }
+    </script> -->
+{% endblock %}
+
